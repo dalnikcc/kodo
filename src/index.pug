@@ -1,0 +1,61 @@
+extends pug/base
+
+append vars
+	- html.classList.push("page-index")
+	- meta.charset = "utf-8"
+	- meta.description = "test task"
+	- title = "KODO"
+	- meta.viewport = "width=device-width, initial-scale=1"
+	
+block content
+	.wrapper
+		main.main.flex
+			.timeline.flex
+				.timeline__top.timeline__top_color.flex
+					.main-date.main-date_left
+						p.main-date__text.main-date__text_blue AVIALABILITY: 
+							span.main-date__date.main-date__date_blue 02/24/2011
+					.event.event__default.event_gray(data-event-position="5")
+						.event__content.event__content_center.event__content_gray
+							p.event__title.event__title_white.event__title_bdbottom PURCHASE DATE: 
+							P.event__date.event__date_white 08/01/2013
+					.event.event__default.event_gray(data-event-position="33")
+						.event__content.event__content_center.event__content_gray
+							p.event__title.event__title_white.event__title_bdbottom PURCHASE DATE: 
+							P.event__date.event__date_white 08/01/2013
+					.event.event__default.event_blue(data-event-position="30")
+						.event__content.event__multiple.event__content_right.event__content_blue
+							.event__content_blue.event__multiple__item
+								p.event__title.event__title_white.event__title_bdbottom START DATE: 
+								P.event__date.event__date_white 08/01/2013
+							.event__content_blue.event__multiple__item
+								p.event__title.event__title_white.event__title_bdbottom PROCESS DATE: 
+								P.event__date.event__date_white 18/02/2013
+							.event__content_blue.event__multiple__item
+								p.event__title.event__title_white.event__title_bdbottom EOL DATE: 
+								P.event__date.event__date_white 28/03/2013
+							.event__content_blue.event__multiple__item
+								p.event__title.event__title_white.event__title_bdbottom ANOTHER DATE: 
+								P.event__date.event__date_white 28/04/2013
+					.event.event__default.event_green(data-event-position="42")
+						.event__content.event__content_left.event__content_green
+							p.event__title.event__title_white GET A COMPETITIVE QUOTE TODAY! 
+					.event.event__hover.event_lightgray(data-event-position="40")
+						.event__content.event__hover__content.event__content_left.event__content_lightgray
+							p.event__title.event__title_blue ADD CAPACITY:
+							P.event__date.event__date_blue 08/01/2013
+					.today
+						span.today__title_white TODAY
+					.event.event__default.event_green(data-event-position="60")
+						.event__content.event__content_left.event__content_green
+							p.event__title.event__title_white GET A COMPETITIVE QUOTE TODAY! 
+					.event.event__hover.event_lightgray(data-event-position="80")
+						.event__content.event__hover__content.event__content_left.event__content_lightgray
+							p.event__title ADD CAPACITY:
+							P.event__date 08/01/2013
+					.main-date.main-date_right
+						p.main-date__title_blue EOSL DATE: 
+							span.main-date__date_blue 08/01/2016
+				.timeline__bottom.timeline__bottom_color
+					p.timeline__bottom-text_center.timeline__bottom-text_color EXTEND THE LIFE OF THIS ASSET TODAY! GET A QUOTE FORM TPM!
+

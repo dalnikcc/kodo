@@ -1,0 +1,12 @@
+.idea/
+
+.DS_Store
+aero-debug
+.log
+aero-deploy
+.tar
+.gz
+package-lock.json
+.git/
+.build/
+.node_modules/
