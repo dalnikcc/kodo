@@ -5,6 +5,9 @@
 @import "base"
 @import 'reset.css'
 
+.flex
+    display: flex
+
 .main
     position: relative
     justify-content: center
@@ -17,7 +20,7 @@
 .main-date
     position: absolute
     width: 90px
-    top: -80px 
+    top: -75px 
     padding: 5px
     background-color: rgba($color-lightgray, 0.8)
     border-radius: 3px
@@ -38,7 +41,7 @@
     &_right
         right: -50px
 
-    &__title_blue,
+    &__text_blue,
     &__date_blue
         color: $color-blue
 
@@ -61,7 +64,7 @@
             position: absolute
             content: ''
             right: -70px
-            top: -8px 
+            top: -9px 
             border-top: 21px solid transparent
             border-left: 56px solid #5d9d1a
             border-bottom: 21px solid transparent
@@ -78,9 +81,9 @@
             background-color: #5d9d1a
 
         &-text_center
-            color: $color-white
-        &-text_color
             text-align: center
+        &-text_color
+            color: $color-white
             
 
 //event
@@ -112,6 +115,9 @@
         &__content
             @include hidden_tag
 
+    &__title_white 
+        color: $color-white
+
     &_gray
         &:after
             background-color: $color-gray
@@ -131,7 +137,7 @@
     &__content
         position: absolute
         width: 170px
-        min-height: 40px
+        min-height: 42px
         top: -80px
         padding: 5px 0
         border-radius: 5px
@@ -186,8 +192,7 @@
 
     &__multiple
         position: absolute
-        width: 170px
-        min-height: 50px
+        width: 170px 
         border-radius: 5px
         top: -80px
         transition: 0.5s
@@ -249,6 +254,8 @@
         width: 1px
         height: 80px
         background-color: $color-orange
+    &__title_white
+        color: $color-white
 
 
 //media
